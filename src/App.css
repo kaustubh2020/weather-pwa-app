@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+html, body, #root {
+    font: 0.9rem sans-serif;
+    color: #fcfcfc;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.splatter {
+    height: 100vh !important;
+    width: 100vw !important;
+    position: absolute;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search {
+    color: white;
+    outline: none;
+    padding: 20px 7%;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 5%;
+    position: relative;
+    letter-spacing: 2px;
+    font-weight: 700;
+    background: rgba( 255, 255, 255, 0.02 );
+    backdrop-filter: blur( 15px );
+    -webkit-backdrop-filter: blur( 20.0px );
+}
+
+.search::placeholder {
+    color: rgb(209, 209, 209);
+    font-weight: 100;
+}
+
+.city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 8%;
+    border-radius: 20px;
+    position: relative;
+
+    background: rgba( 255, 255, 255, 0.02 );
+    backdrop-filter: blur( 15px );
+    -webkit-backdrop-filter: blur( 20.0px );
+}
+
+p {
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.city-temp {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+.city sup {
+    font-size: 0.5em;
+}
+
+.city-name {
+    font-size: 2em;
+}
+
+.city-name sup {
+    padding: 0.2em 0.6em;
+    margin-left: 0.2em;
+    border-radius: 30px;
+    background: #ff8c00;
+}
+
+.city-icon {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.city-text {
+    font-weight: 900;
+}
+
+footer {
+    position: absolute;
+    bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .search {
+        padding: 10px 7%;
+    }
+
+    .city {
+        padding:15px 15%;
+    }
+}
