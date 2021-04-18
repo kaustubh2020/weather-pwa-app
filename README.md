@@ -1,6 +1,6 @@
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/kaustubh2020/weather-pwa-app"><h1 align="center">Weather PWA App</h1></a>
 
- <h2 align="center">My personal portfolio made with Gatsby</h2>
+ <h2 align="center">PWA made by React.js to check Weather</h2>
  
  
  <p align="center">
