@@ -3,6 +3,7 @@ import {fetchWeather} from './api/fetchWeather';
 import FluidAnimation from 'react-fluid-animation'
 import Wobble from 'react-reveal/Wobble';
 import Bounce from 'react-reveal/Bounce';
+import LightSpeed from 'react-reveal/LightSpeed';
 import './App.css';
 
 var data = this;
@@ -15,7 +16,7 @@ const defaultConfig = {
     pressureIterations: 30,
     curl: 50,
     splatRadius: 0.006
-  };
+};
 
 const App = () => {
 
@@ -57,7 +58,9 @@ const App = () => {
                     </div>
                 </Bounce>
             )}
-            <footer> © Made with <span role="img" aria-label="heart">💛</span> by | <a target="_blank" rel="noopener noreferrer" href="https://kaustubh-folio.netlify.app/">Kaustubh Jaiswal</a> </footer>
+            <LightSpeed left>
+                <footer> © Made with <span role="img" aria-label="heart">💛</span> by | <a target="_blank" rel="noopener noreferrer" href="https://kaustubh-folio.netlify.app/">Kaustubh Jaiswal</a> </footer>
+            </LightSpeed>
         </div>
     )
 }

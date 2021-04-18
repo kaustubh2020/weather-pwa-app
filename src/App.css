@@ -3,7 +3,7 @@
 
 html, body, #root {
     font: 0.9rem sans-serif;
-    color: #fcfcfc;
+    color: #ffffff;
     height: 100vh;
     margin: 0;
     font-family: 'Raleway', sans-serif;
@@ -24,7 +24,7 @@ html, body, #root {
 }
 
 .search {
-    color: white;
+    color: #ffffff;
     outline: none;
     padding: 20px 7%;
     border-radius: 20px;
@@ -51,7 +51,6 @@ html, body, #root {
     padding: 40px 8%;
     border-radius: 20px;
     position: relative;
-
     background: rgba( 255, 255, 255, 0.02 );
     backdrop-filter: blur( 15px );
     -webkit-backdrop-filter: blur( 20.0px );
@@ -104,7 +103,23 @@ p {
 
 footer {
     position: absolute;
-    bottom: 5px;
+    bottom: 0px;
+    letter-spacing: 1px;
+    /* font-weight: 700; */
+    background: rgba( 255, 255, 255, 0.02 );
+    backdrop-filter: blur( 15px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    padding: 5px 40%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fffc2d;
+}
+
+footer a:hover {
+    color: #e9e500;
+    text-decoration: line-through;
 }
 
 @media only screen and (max-width: 600px) {
@@ -114,5 +129,9 @@ footer {
 
     .city {
         padding:15px 15%;
+    }
+
+    footer {
+        padding: 5px 7%;
     }
 }
