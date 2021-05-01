@@ -1,11 +1,12 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "🌦",
+  "name": "🌦",
+  "description": "🌦",
   "icons": [
       {
           "src": "/images/logo.png",
           "type": "image/png",
-          "sizes": "2000x2000"
+          "sizes": "512x512"
       }
   ],
   "start_url": ".",
