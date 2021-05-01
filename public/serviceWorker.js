@@ -1,5 +1,5 @@
 /* eslint-disable array-callback-return */
-const CACHE_NAME = "version-1";
+const CACHE_NAME = "version-1.1";
 const urlsToCache = [ 'index.html', 'offline.html' ];
 
 const self = this;
@@ -10,7 +10,6 @@ self.addEventListener('install', (event) => {
         caches.open(CACHE_NAME)
             .then((cache) => {
                 console.log('Opened cache');
-
                 return cache.addAll(urlsToCache);
             })
     )

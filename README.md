@@ -39,7 +39,7 @@
 
 ## :wrench: Setup
 
-`git clone https://github.com/kaustubh2020/kaustubh-portfolio`
+`git clone https://github.com/kaustubh2020/weather-pwa-app`
 
 In the project directory, you can run:
 

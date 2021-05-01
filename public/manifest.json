@@ -1,11 +1,11 @@
 {
   "short_name": "Weather App",
-  "name": "Weather App PWA",
+  "name": "",
   "icons": [
       {
           "src": "/images/logo.png",
           "type": "image/png",
-          "sizes": "1024x1024"
+          "sizes": "2000x2000"
       }
   ],
   "start_url": ".",

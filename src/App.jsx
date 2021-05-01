@@ -4,6 +4,7 @@ import FluidAnimation from 'react-fluid-animation'
 import Wobble from 'react-reveal/Wobble';
 import Bounce from 'react-reveal/Bounce';
 import LightSpeed from 'react-reveal/LightSpeed';
+import AnimatedCursor from "react-animated-cursor"
 import './App.css';
 
 var data = this;
@@ -22,6 +23,7 @@ const App = () => {
 
     const [query, setQuery] = useState('');
     const [weather, setWeather] = useState({});
+    const colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',];
 
     const search = async (e) => {
         if(e.key === 'Enter') {debugger;
@@ -35,6 +37,14 @@ const App = () => {
 
     return (
         <div className="main-container">
+                <AnimatedCursor
+                innerSize={15}
+                outerSize={30}
+                color='255, 255, 255'
+                outerAlpha={0.2}
+                innerScale={0.7}
+                outerScale={5}
+                />
             <FluidAnimation config={defaultConfig} className="splatter" />
             <Wobble>
                 <input type="text" className="search" placeholder="Type here..." value={query} onChange={(e) => setQuery(e.target.value)} onKeyPress={search}

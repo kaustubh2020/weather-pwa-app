@@ -117,9 +117,11 @@ footer a {
     color: #fffc2d;
 }
 
-footer a:hover {
+a:hover, a:focus{
     color: #e9e500;
     text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    outline: none;
 }
 
 @media only screen and (max-width: 600px) {
