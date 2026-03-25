@@ -5,24 +5,22 @@
   "author": "Kaustubh Jaiswal",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.10",
-    "@testing-library/react": "^11.2.6",
-    "@testing-library/user-event": "^12.8.3",
-    "ajv": "^8.17.1",
     "axios": "^0.21.1",
     "react": "^17.0.2",
-    "react-animated-cursor": "^2.1.8",
+    "react-animated-cursor": "2.6.0",
     "react-dom": "^17.0.2",
     "react-fluid-animation": "^1.0.1",
     "react-reveal": "^1.2.2",
-    "react-scripts": "^5.0.1",
     "web-vitals": "^1.1.1"
   },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.1"
+  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [
     "pwa",
@@ -31,26 +29,8 @@
     "reactjs",
     "serviceworker"
   ],
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/kaustubh2020/weather-pwa-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }

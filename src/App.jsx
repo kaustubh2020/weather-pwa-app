@@ -7,8 +7,6 @@ import LightSpeed from 'react-reveal/LightSpeed';
 import AnimatedCursor from "react-animated-cursor"
 import './App.css';
 
-var data = this;
-
 const defaultConfig = {
     textureDownsample: 1,
     densityDissipation: 0.99,
@@ -26,7 +24,7 @@ const App = () => {
 
     const search = async (e) => {
         if(e.key === 'Enter') {
-            data = await fetchWeather(query);
+            const data = await fetchWeather(query);
             setWeather(data);
             setQuery('');
         }
